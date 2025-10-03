@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Moon, Sun } from "lucide-react";
+import { useTheme } from "./ThemeProvider";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,7 +66,16 @@ export default function Navigation() {
             </button>
           </div>
 
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-3">
+            <Button
+              size="icon"
+              variant="ghost"
+              onClick={toggleTheme}
+              className="rounded-full"
+              data-testid="button-theme-toggle"
+            >
+              {theme === "light" ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
+            </Button>
             <Button
               onClick={() => scrollToSection("contact")}
               className="rounded-full px-6"
@@ -108,13 +119,24 @@ export default function Navigation() {
             >
               Contact
             </button>
-            <Button
-              onClick={() => scrollToSection("contact")}
-              className="w-full rounded-full"
-              data-testid="button-book-call-mobile"
-            >
-              Book Free Call
-            </Button>
+            <div className="flex gap-3">
+              <Button
+                size="icon"
+                variant="ghost"
+                onClick={toggleTheme}
+                className="rounded-full"
+                data-testid="button-theme-toggle-mobile"
+              >
+                {theme === "light" ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
+              </Button>
+              <Button
+                onClick={() => scrollToSection("contact")}
+                className="flex-1 rounded-full"
+                data-testid="button-book-call-mobile"
+              >
+                Book Free Call
+              </Button>
+            </div>
           </div>
         </div>
       )}
