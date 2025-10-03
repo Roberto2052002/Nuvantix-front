@@ -1,0 +1,113 @@
+Build a modern, responsive landing page for a tech company called Nuvantix Tech.
+
+Nuvantix Tech offers two core services:
+
+🧠 AI Receptionist
+
+24/7 virtual phone receptionist
+
+Answers calls, handles FAQs, books appointments
+
+Speaks English and Spanish
+
+Passes the call to a real human when needed
+
+📈 Marketing & Lead Generation
+
+Runs Facebook, Instagram, and TikTok ad campaigns
+
+Creates landing pages and lead capture funnels
+
+Automates email and SMS follow-ups
+
+Tracks leads and campaign performance (dashboard mockup only)
+
+✅ Include the following sections:
+
+Sticky top navigation bar
+
+Logo on the left: "Nuvantix Tech"
+
+Menu: Home | Services | Contact
+
+Right side: Button: "Book Free Call"
+
+Hero section (full width)
+
+Bold headline: “Automate, Grow, and Convert — All in One Place”
+
+Subheadline: “Nuvantix Tech helps you never miss a call and fills your pipeline with qualified leads.”
+
+Two CTA buttons: “Book Free Call” and “See Our Work”
+
+Why Choose Us (3-column section)
+
+Icons + short blurbs:
+
+🔁 24/7 Call Handling
+
+📊 Results-Driven Campaigns
+
+🤖 Human + AI Hybrid Efficiency
+
+Services Section
+
+Two vertical cards side by side:
+
+Left: AI Receptionist (with icon and 3–4 bullets)
+
+Right: Marketing Services (with icon and 3–4 bullets)
+
+Each card has a "Learn More" button (can link to section anchors)
+
+How It Works Section
+
+Four horizontal steps with icons:
+
+Book a Free Call
+
+Customize Your Agent or Campaign
+
+Launch in 48 Hours
+
+Watch Results Grow
+
+Testimonials Section
+
+At least 2 testimonial cards with dummy names, client photos, and quote icons
+
+Call to Action Section
+
+Bright background with bold text:
+“Let’s grow your business with smart automation and targeted marketing.”
+
+Button: “Book Free Call”
+
+Footer
+
+Logo + description
+
+Nav links: Home, Services, Contact
+
+Contact email (placeholder: contact@nuvantixtech.com
+)
+
+🎨 Style Requirements:
+
+Clean modern UI using Tailwind CSS
+
+Light mode theme
+
+Subtle gradients or shadows for depth
+
+Responsive design (mobile/tablet/desktop)
+
+🔒 Rules:
+
+No backend, APIs, or databases.
+
+Do not mention prices or plans.
+
+Use placeholder content/images where needed.
+
+🎯 Goal: Pure frontend landing page with strong visual clarity and service breakdown.
