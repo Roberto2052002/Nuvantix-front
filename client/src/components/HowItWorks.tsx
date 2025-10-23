@@ -52,16 +52,22 @@ export default function HowItWorks() {
                 {index < steps.length - 1 && (
                   <div className="hidden lg:block absolute top-12 left-[60%] w-[80%] h-0.5 bg-border" />
                 )}
-                
-                <div className="relative inline-flex items-center justify-center w-24 h-24 mx-auto">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-chart-2 rounded-full opacity-10" />
-                  <div className="relative">
-                    <Icon className="w-10 h-10 text-primary" />
+
+                {/* stack the gradient circle (icon) and the numbered badge so they move together */}
+                <div
+                  className="flex flex-col items-center mx-auto"
+                  style={index === 3 ? { gap: '0.5rem', transform: 'translateY(6px)' } : { gap: '0.5rem' }}
+                >
+                  <div className="relative inline-flex items-center justify-center w-24 h-24">
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary to-chart-2 rounded-full opacity-10" />
+                    <div className="relative">
+                      <Icon className="w-10 h-10 text-primary" />
+                    </div>
                   </div>
-                </div>
-                
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary text-primary-foreground font-bold text-lg">
-                  {step.number}
+
+                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary text-primary-foreground font-bold text-lg">
+                    {step.number}
+                  </div>
                 </div>
                 
                 <h3 className="text-xl font-semibold" data-testid={`text-step-title-${index}`}>

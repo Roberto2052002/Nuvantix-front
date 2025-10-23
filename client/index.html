@@ -11,6 +11,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Favicon: primary -> user-provided PNG at /favicon-32.png (you placed it in client/public) -->
+  <link rel="icon" href="/favicon-32.png?v=2" />
+  <link rel="apple-touch-icon" href="/favicon-32.png?v=2" />
+  <link rel="icon" href="/favicon.svg" />
+    <script>
+      // Dev helper: prefer /favicon.png if it exists (avoids hard-refresh during dev)
+      (async function(){
+        try {
+          const res = await fetch('/favicon-32.png?v=2', { method: 'HEAD' });
+          if (res.ok) {
+            const link = document.querySelector('link[rel~="icon"]');
+            if (link) link.href = '/favicon-32.png?v=2';
+          }
+        } catch (e) {
+          // ignore
+        }
+      })();
+    </script>
+    <!-- Fallbacks: common /favicon.ico and a tiny data URI so dev server always has something to show -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAAWgmWQ0AAAAASUVORK5CYII=" />
   </head>
   <body>
     <div id="root"></div>

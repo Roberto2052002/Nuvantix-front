@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@assets/generated_images/AI_technology_hero_illustration_02dbb40d.png";
+import brightHero from "@assets/generated_images/WhatsApp Image 2025-10-01 at 12.50.54_c0e7c839 - Editado (1).png";
+import darkHero from "@assets/generated_images/Diseño Sin Título - 1 - Editado.png";
+import { useTheme } from "@/components/ThemeProvider";
 
 export default function Hero() {
+  const { theme } = useTheme();
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -48,11 +51,11 @@ export default function Hero() {
             </div>
           </div>
           
-          <div className="hidden lg:block">
+          <div className="flex justify-center lg:justify-end">
             <img
-              src={heroImage}
-              alt="AI Technology Illustration"
-              className="w-full h-auto"
+              src={theme === 'dark' ? darkHero : brightHero}
+              alt="Nuvantix Tech logo"
+              className="w-full max-w-sm md:max-w-4xl lg:max-w-[90rem] h-auto lg:translate-x-32"
               data-testid="img-hero"
             />
           </div>
