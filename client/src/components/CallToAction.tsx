@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import * as React from "react";
-import heroImg from '../../../attached_assets/generated_images/AI_technology_hero_illustration_02dbb40d.png';
+import heroImg from "@assets/generated_images/AI_technology_hero_illustration_02dbb40d.png";
 
 type FormState = {
   name: string;
@@ -46,7 +46,12 @@ export default function CallToAction() {
         message: form.message,
       };
 
-      const endpoint = (import.meta.env.VITE_CONTACT_ENDPOINT as string | undefined) || "/submit";
+  // Resolve API base from environment. Prefer VITE_API_BASE_URL, then VITE_CONTACT_ENDPOINT.
+  // Fallback to relative /submit when no env is set (works with Vite dev proxy).
+  const env = import.meta.env as unknown as Record<string, string | undefined>;
+  const API_BASE = env.VITE_API_BASE_URL ?? env.VITE_CONTACT_ENDPOINT ?? "";
+  const base = API_BASE ? API_BASE.replace(/\/$/, "") : "";
+  const endpoint = base ? `${base}/submit` : "/submit";
       const res = await fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },

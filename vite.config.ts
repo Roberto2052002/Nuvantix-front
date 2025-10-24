@@ -24,20 +24,20 @@ export default defineConfig({
     outDir: path.resolve(projectRoot, "dist"),
     emptyOutDir: true,
   },
-  server: {
-    fs: {
-      strict: true,
-      deny: ["**/.*"],
-    },
-    // Dev proxy: forward API calls to a local backend to avoid CORS and 404s
-    // This ensures requests from the Vite dev server to `/submit` are proxied
-    // to http://localhost:3000 during development. Remove or adjust in production.
-    proxy: {
-      '/submit': {
-        target: 'http://127.0.0.1:3000',
-        changeOrigin: true,
-        secure: false,
-      },
-    },
+server: {
+  fs: {
+    strict: true,
+    deny: ["**/.*"],
+  },
+  proxy:
+    process.env.NODE_ENV === "development"
+      ? {
+          "/submit": {
+            target: "http://127.0.0.1:3000", // local backend for dev
+            changeOrigin: true,
+            secure: false,
+          },
+        }
+      : {}, // no proxy in production
   },
 });
