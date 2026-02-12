@@ -69,7 +69,7 @@ export default function Footer() {
               <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M22 16.92V21a1 1 0 0 1-1.11 1 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2 3.11 1 1 0 0 1 3 2h4.09a1 1 0 0 1 1 .75c.12.74.36 1.45.7 2.1a1 1 0 0 1-.24 1.05L8.5 8.5a16 16 0 0 0 7 7l1.6-1.05a1 1 0 0 1 1.05-.24c.65.34 1.36.58 2.1.7a1 1 0 0 1 .75 1V22z" />
               </svg>
-              <a href="tel:+1234567890" className="hover:text-white transition-colors">+1 (786) 937 8729</a>
+              <a href="tel:+1234567890" className="hover:text-white transition-colors">+1 (786) 681 2129</a>
             </div>
           </div>
         </div>

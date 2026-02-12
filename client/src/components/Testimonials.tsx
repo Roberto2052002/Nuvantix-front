@@ -17,7 +17,7 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
-    quote: "Within a week, our calendar was full. The leads were qualified and ready to talk — it was like flipping a switch.",
+    quote: "The receptionist + automation combo cleaned up our entire flow — call handling, scheduling, confirmations, and reminders all ran on autopilot.",
     name: "Jessica Ray",
     title: "Trial Client",
     company: "",
@@ -31,7 +31,7 @@ const testimonials: Testimonial[] = [
     image: fillerAvatar
   },
   {
-    quote: "We used their lead gen system during a slow quarter and ended up breaking a sales record. That says everything.",
+    quote: "We didn’t need more leads — we needed to stop losing the ones we already had. The AI receptionist made sure every call was handled, and it changed everything.",
     name: "Daniel Foster",
     title: "Early User",
     company: "",
@@ -45,7 +45,7 @@ const testimonials: Testimonial[] = [
     image: fillerAvatar
   },
   {
-    quote: "The targeting was spot-on. We didn’t just get leads — we got the right ones. Saved us hours of cold outreach.",
+    quote: "Our business feels more organized now. Calls are answered professionally, appointments are confirmed automatically, and nothing gets lost.",
     name: "Priya Nair",
     title: "Startup Founder",
     company: "",
@@ -59,7 +59,7 @@ const testimonials: Testimonial[] = [
     image: fillerAvatar
   },
   {
-    quote: "We’ve tested other services, but this is the first one that actually delivered leads that convert.",
+    quote: "Most tools promise efficiency. This one actually systemized the front desk — and that directly improved performance across the board.",
     name: "Alex Boudreaux",
     title: "Growth Consultant",
     company: "",
@@ -73,7 +73,7 @@ const testimonials: Testimonial[] = [
     image: fillerAvatar
   },
   {
-    quote: "I honestly wasn’t expecting much, but we landed 3 high-ticket clients in the first two weeks of testing.",
+    quote: "I wasn’t expecting much, but once the automation went live, scheduling, confirmations, and follow-ups started running on their own. It completely changed our daily workflow.",
     name: "Luis Martinez",
     title: "Beta Tester",
     company: "",

@@ -8,8 +8,8 @@ const features = [
   },
   {
     icon: TrendingUp,
-    title: "Results-Driven Campaigns",
-    description: "Data-backed marketing strategies that deliver measurable growth and qualified leads to your business."
+    title: "Business Process Automation",
+    description: "Data-driven automation systems that streamline workflows and eliminate repetitive manual tasks."
   },
   {
     icon: Zap,

@@ -16,14 +16,14 @@ const services = [
     gradient: "from-blue-500 to-cyan-500"
   },
   {
-    title: "Marketing & Lead Generation",
+    title: "Business Process Automation",
     icon: TrendingUp,
-    description: "Fill your pipeline with qualified leads",
+    description: "Automate repetitive tasks and streamline your operations",
     features: [
-      "Facebook, Instagram, and TikTok ad campaigns",
-      "Custom landing pages and lead capture funnels",
-      "Automated email and SMS follow-ups",
-      "Lead tracking and campaign performance dashboard"
+      "Automates internal workflows and repetitive tasks",
+      "Integrates with CRMs, calendars, and business tools",
+      "Real-time notifications and smart routing",
+      "Custom AI workflows built for your business"
     ],
     gradient: "from-purple-500 to-pink-500"
   }
@@ -38,7 +38,7 @@ export default function Services() {
   };
 
   return (
-    <section id="services" className="py-16 md:py-24">
+    <section id="services" className="py-16 md:py-24 scroll-mt-24 md:scroll-mt-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" data-testid="text-services-heading">
@@ -57,7 +57,7 @@ export default function Services() {
                 key={index}
                 className="relative overflow-hidden hover-elevate transition-all duration-300"
                 data-testid={`card-service-${index}`}
-              >
+                >
                 <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${service.gradient} opacity-10 rounded-full -translate-y-16 translate-x-16`} />
                 
                 <CardHeader className="space-y-4">

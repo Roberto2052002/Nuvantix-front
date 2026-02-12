@@ -11,7 +11,7 @@ const steps = [
     icon: Settings,
     number: "02",
     title: "Customize Your Solution",
-    description: "We tailor your AI agent or marketing campaign to fit your brand"
+    description: "We design a custom automation system tailored to your workflow and goals."
   },
   {
     icon: Rocket,

@@ -27,7 +27,7 @@ export default function Hero() {
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl" data-testid="text-hero-subheadline">
-              Nuvantix Tech helps you never miss a call and fills your pipeline with qualified leads.
+              Nuvantix Tech helps you never miss a call and streamline your business with smart automation.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">

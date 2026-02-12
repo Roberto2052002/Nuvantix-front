@@ -46,12 +46,12 @@ export default function CallToAction() {
         message: form.message,
       };
 
-  // Resolve API base from environment. Prefer VITE_API_BASE_URL, then VITE_CONTACT_ENDPOINT.
-  // Fallback to relative /submit when no env is set (works with Vite dev proxy).
+  // Resolve contact endpoint from environment. Prefer VITE_API_BASE_URL, then VITE_CONTACT_ENDPOINT.
+  // Fallback to the n8n webhook URL when no env is set.
   const env = import.meta.env as unknown as Record<string, string | undefined>;
-  const API_BASE = env.VITE_API_BASE_URL ?? env.VITE_CONTACT_ENDPOINT ?? "";
-  const base = API_BASE ? API_BASE.replace(/\/$/, "") : "";
-  const endpoint = base ? `${base}/submit` : "/submit";
+  const endpoint =
+    (env.VITE_API_BASE_URL ?? env.VITE_CONTACT_ENDPOINT)?.replace(/\/$/, "") ||
+    "https://n8n.nuvantix.net/webhook/07280dfa-cdb5-4af9-bc24-159838a6f99a";
       const res = await fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
