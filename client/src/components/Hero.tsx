@@ -27,7 +27,7 @@ export default function Hero() {
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl" data-testid="text-hero-subheadline">
-              Nuvantix Tech helps you never miss a call and streamline your business with smart automation.
+              Nuvantix Tech provides intelligent AI agents and smart automation systems that handle customer conversations, capture leads, and streamline the daily operations of your business.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">

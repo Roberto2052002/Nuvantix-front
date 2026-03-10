@@ -60,6 +60,13 @@ export default function Navigation() {
               Services
             </button>
             <button
+              onClick={() => scrollToSection("agents")}
+              className="text-foreground font-medium hover:text-primary transition-colors"
+              data-testid="link-agents"
+            >
+              Agents
+            </button>
+            <button
               onClick={() => scrollToSection("contact")}
               className="text-foreground font-medium hover:text-primary transition-colors"
               data-testid="link-contact"
@@ -113,6 +120,13 @@ export default function Navigation() {
               data-testid="link-services-mobile"
             >
               Services
+            </button>
+            <button
+              onClick={() => scrollToSection("agents")}
+              className="block w-full text-left py-2 text-foreground font-medium"
+              data-testid="link-agents-mobile"
+            >
+              Agents
             </button>
             <button
               onClick={() => scrollToSection("contact")}

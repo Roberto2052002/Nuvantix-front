@@ -4,13 +4,13 @@ import { Phone, MessageSquare, Globe, Mail, TrendingUp, BarChart } from "lucide-
 
 const services = [
   {
-    title: "AI Receptionist",
+    title: "AI Agents",
     icon: Phone,
-    description: "Your 24/7 virtual phone receptionist that never sleeps",
+    description: "An employee that never sleeps, handling customer inquiries and capturing leads automatically.",
     features: [
-      "Answers calls and handles FAQs automatically",
-      "Books appointments and manages your calendar",
-      "Speaks English and Spanish fluently",
+      "Answers messages and handles FAQs automatically",
+      "Books appointments and syncs with your calendar",
+      "Speaks English, Spanish and Many more",
       "Seamlessly transfers to a human when needed"
     ],
     gradient: "from-blue-500 to-cyan-500"

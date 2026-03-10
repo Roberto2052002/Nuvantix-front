@@ -6,6 +6,7 @@ import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
+import OptionsSection from "@/components/options";
 
 export default function Home() {
   return (
@@ -15,9 +16,10 @@ export default function Home() {
       <WhyChooseUs />
       <Services />
       <HowItWorks />
-      <Testimonials />
+      <Testimonials />    
+      <OptionsSection />
       <CallToAction />
-      <Footer />
+      <Footer />     
     </div>
   );
 }

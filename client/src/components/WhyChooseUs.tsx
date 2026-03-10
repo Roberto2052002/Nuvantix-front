@@ -3,8 +3,8 @@ import { Clock, TrendingUp, Zap } from "lucide-react";
 const features = [
   {
     icon: Clock,
-    title: "24/7 Call Handling",
-    description: "Never miss a lead with our AI receptionist answering calls around the clock, even when you can't."
+    title: "AI Agents + Automation",
+    description: "Never miss a lead with our AI agents responding to customer inquiries around the clock, even when your team is offline."
   },
   {
     icon: TrendingUp,
