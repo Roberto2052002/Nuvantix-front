@@ -8,8 +8,6 @@ const agents = [
     name: "Atlas",
     industry: "Real Estate",
     description: "Atlas is designed for real estate professionals who want to capture and qualify leads automatically. It responds to inquiries, identifies serious buyers or renters, and books property showings directly on the agent's calendar.",
-    setup: "$1,500",
-    monthly: "$500/mo",
     capabilities: [
       "Responds to Instagram DMs and website inquiries 24/7",
       "Qualifies buyers and renters based on budget, location, and intent",
@@ -23,8 +21,6 @@ const agents = [
     name: "Nexus",
     industry: "Aesthetic Clinics & Med Spas",
     description: "Nexus is built for aesthetic clinics and med spas that receive constant inquiries about treatments and appointments. It guides potential clients through conversations and converts them into booked consultations automatically.",
-    setup: "$750",
-    monthly: "$500/mo",
     capabilities: [
       "Answers questions about Botox, fillers, lasers, facials, and treatments",
       "Qualifies potential clients based on treatment interest",
@@ -38,8 +34,6 @@ const agents = [
     name: "Mesa",
     industry: "Restaurants & Nightlife",
     description: "Mesa helps restaurants and nightlife venues handle reservations, event inquiries, and guest questions automatically while promoting events and specials.",
-    setup: "$750",
-    monthly: "$500/mo",
     capabilities: [
       "Answers questions about hours, reservations, and dress code",
       "Books reservations via Calendly or reservation platforms",
@@ -52,8 +46,6 @@ const agents = [
     name: "Pulse",
     industry: "Gyms & Fitness",
     description: "Pulse is designed for gyms and fitness studios that receive constant inquiries about memberships, classes, and personal training. It converts conversations into booked visits or trial sessions.",
-    setup: "$1,000",
-    monthly: "$500/mo",
     capabilities: [
       "Answers questions about memberships and pricing",
       "Shares class schedules and training options",
@@ -66,8 +58,6 @@ const agents = [
     name: "Smile",
     industry: "Dental Clinics",
     description: "Smile helps dental clinics respond to patient inquiries, answer common questions, and convert conversations into booked consultations or appointments.",
-    setup: "$1,000",
-    monthly: "$500/mo",
     capabilities: [
       "Answers questions about cleanings, whitening, veneers, Invisalign",
       "Responds to insurance and pricing questions",
@@ -80,8 +70,6 @@ const agents = [
     name: "Lex",
     industry: "Law Firms",
     description: "Lex is built for law firms that want to pre-qualify potential cases before attorneys spend time on consultations.",
-    setup: "$2,000",
-    monthly: "$500/mo",
     capabilities: [
       "Answers inquiries about legal practice areas",
       "Qualifies cases based on incident details",
@@ -148,20 +136,6 @@ export default function Home() {
                     <p className="text-sm text-muted-foreground leading-relaxed h-28 line-clamp-6">
                       {agent.description}
                     </p>
-                  </div>
-
-                  <div className="bg-background/50 rounded-xl p-5 border border-white/5 mb-8">
-                    <div className="flex justify-between items-end">
-                      <div>
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Setup</p>
-                        <p className="text-xl font-semibold">{agent.setup}</p>
-                      </div>
-                      <div className="w-px h-10 bg-white/10 mx-4"></div>
-                      <div>
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Monthly</p>
-                        <p className="text-xl font-semibold text-primary">{agent.monthly}</p>
-                      </div>
-                    </div>
                   </div>
 
                   <div className="flex-1 mb-8">
